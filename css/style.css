@@ -127,3 +127,38 @@ img {
 /************************************************
     SOLUZIONE RESPONSIVE
  ************************************************/
+@media screen and (max-width: 1160px) {
+    .container {
+        width: 100%;
+    }
+}
+/* @media screen and (max-width: 768px){
+    sistemanto la media query bonus per prima
+    il layout risulta buono anche per schermi a 768px
+ } */
+@media screen and (max-width: 480px) {
+    .row {
+        flex-direction: column;
+    }
+    .col {
+        width: 100% !important; /*Senza !important non funzionava*/
+    }
+    h2 {
+        font-size: 2.2rem;
+    }
+    h3 {
+        font-size: 2rem;
+    }
+    .container {
+        padding: 0 2.5rem;
+    }
+    .lessons .col:first-child{
+        margin-bottom: 3.75rem;
+    }
+    .steps .col:not(:first-child) {
+        padding-top: 3.75rem;
+    }
+    .why-us .col-right {
+        padding: 4.375rem 0;
+    }
+}
