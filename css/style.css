@@ -138,10 +138,10 @@ img {
  } */
 @media screen and (max-width: 480px) {
     .row {
-        flex-direction: column;
+        flex-direction: column; /*Meglio dare un wrap e width al 100% così vanno a capo*/
     }
     .col {
-        width: 100% !important; /*Senza !important non funzionava*/
+        width: 100% !important; /*Senza !important non funziona perchè le media query non aggiungono specificità*/
     }
     h2 {
         font-size: 2.2rem;
